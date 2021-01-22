@@ -1,0 +1,12 @@
+.header{
+  grid-area: h;
+  background-color: chocolate;
+}
+
+.header img{
+  width: 50px;
+}
+
+.item.active{
+  color: gold;
+}
