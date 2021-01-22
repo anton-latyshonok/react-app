@@ -6,8 +6,9 @@ const Post = (props) => {
         <div className={s.item}>
           <img src='https://upload.wikimedia.org/wikipedia/commons/7/77/Avatar_cat.png'></img>
           {props.message}
+          
           <div>
-          <span>Like</span>
+          <span>Like {props.likes}</span>
           </div>
         </div>
     </div>);
