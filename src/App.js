@@ -8,19 +8,17 @@ import Profile from './components/Profile/Profile.jsx';
 import Dialogs from "./components/Dialogs/Dialogs.jsx";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
-import {BrowserRouter, Route} from "react-router-dom";
-
+import {Route} from "react-router-dom";
 
 
 const App = (props) => {
 
     return (
-        <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
-                    <Route path='/profile' render={ () => <Profile state={props.state.profilePage}/>}/>
+                    <Route path='/profile' render={ () => <Profile state={props.state.profilePage} addPost={props.addPost}/>}/>
                     <Route path='/dialogs' render={ () => <Dialogs state={props.state.dialogsPage}/>}/>
                     <Route path='/news' render={ () => <News/>}/>
                     <Route path='/music' render={ () => <Music/>}/>
@@ -29,7 +27,6 @@ const App = (props) => {
                 </div>
 
             </div>
-        </BrowserRouter>
     );
 }
 
