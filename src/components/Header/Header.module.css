@@ -1,12 +1,17 @@
-.header{
-  grid-area: h;
-  background-color: chocolate;
+.header {
+    grid-area: h;
+    background-color: green;
 }
 
-.header img{
-  width: 50px;
+.header img {
+    width: 50px;
 }
 
-.item.active{
-  color: gold;
+.loginBlock {
+    float: right;
+
 }
+.loginBlock a {
+    color: white;
+}
+
